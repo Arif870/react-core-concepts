@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.profile {
+  background-color: #282c34;
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  font-size: 45px;
+  font-weight: 300;
+}
+.profile p {
+  font-size: 20px;
+  color: skyblue;
+}
