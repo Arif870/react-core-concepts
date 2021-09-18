@@ -1,11 +1,20 @@
 import "./App.css";
 
 function App() {
+  let profiles = [
+    { name: "Arif-uz-zaman", pro: "React Developer" },
+    { name: "Sumaiya Akter", pro: "Front-End Developer" },
+    {
+      name: "Zaman",
+      pro: "JavaScript Developer",
+    },
+  ];
+
   return (
     <div className="App">
-      <Profile name="Arif-uz-zaman" profession="React Developer" />
-      <Profile name="Sumaiya Akter" profession="Front-end Developer" />
-      <Profile name="Aysha Begum" profession="House Wife" />
+      {profiles.map(p => (
+        <Profile name={p.name} pro={p.pro} />
+      ))}
     </div>
   );
 }
@@ -14,7 +23,7 @@ function Profile(props) {
   return (
     <div className="profile">
       <h1>{props.name}</h1>
-      <p>{props.profession}</p>
+      <p>{props.pro}</p>
     </div>
   );
 }
